@@ -118,3 +118,7 @@ form {
     a.link{
         color: red;
     }
+
+.success {
+        color: blue;
+    }
