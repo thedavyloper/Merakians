@@ -36,7 +36,7 @@ if(isset($_POST['submit'])) {
             if(file_put_contents('login_data.json', $final_data)) 
             {
               
-              $message = "<p class='success'>Data Submitted Successfully</p>";
+              header ("Location:login_success.php");
             }
 
       }
