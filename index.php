@@ -1,6 +1,7 @@
 
 <!-- beginning of append login_data to json php script -->
 <?php
+include "phpfile.php";
 $message = "";
 $error = "";
 
