@@ -1,60 +1,7 @@
 
-<!-- beginning of append login_data to json php script -->
 <?php
 include "phpfile.php";
-$message = "";
-$error = "";
-
-if(isset($_POST['submit'])) {
-
-   if (empty($_POST['email']))
-   {
-
-        $error = "<p class='red'>Please email is required</p>";
-
-   }
-   else if(empty($_POST['password'])) 
-   {
-
-        $error = "<p class='red'>Please password is required</p>";
-
-   }
-
-   else
-   {   
-      if(file_exists("login_data.json"))
-      {
-
-           $current_data = file_get_contents("login_data.json");
-           $array_data = json_decode ($current_data, true);
-           $extra = array(
-       
-                  "email" => $_POST['email'],
-                  "password" => $_POST['password']
-
-            );
-            $array_data[] = $extra;
-            $final_data = json_encode($array_data);
-            if(file_put_contents('login_data.json', $final_data)) 
-            {
-              
-              $message = "<p class='success'>Data Submitted Successfully</p>";
-            }
-
-      }
-      else 
-      {
-
-        $error = "JSON File not found";
-      }
-
-   }
-}
-
 ?>
-
-<!-- End of append login_data to json php script -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +12,7 @@ if(isset($_POST['submit'])) {
       <title>Login Page</title>
       <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
       <link rel="stylesheet" href="css/style.css">
-      <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/aidee/image/upload/v1568650275/Merakians/Grp_logo_qkrk0u.png">
+      <link rel="shortcut icon" type="image/png" href="favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -91,13 +38,6 @@ if(isset($_POST['submit'])) {
               echo $error;
             }
           ?>
-            <?php
-            if(isset($message))
-            {
-
-              echo $message;
-            }
-            ?>
       </form>
       </div>
       

@@ -1,27 +1,51 @@
-//begining of form validation\\
+
 <?php
-$emailErr = $passwordErr ="";
-$email = $password ="";
+$message = "";
+$error = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-if (empty($_POST["email"])) {
-        $emailErr = "Email Missing";
-}
-else{
-    $email = $_POST["email"];
-}
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-if (empty($_POST["password"])) {
-    $passwordErr = "Password Missing";
-}
-else{
-    $password = $_POST["password"]
-}
+if(isset($_POST['submit'])) {
 
-$email = test_input($_POST["email"]);
-$password = test_input($_POST["password"]);
-         
-         echo $email;
-         echo "<br>";
-         echo $password;
+   if (empty($_POST['email']))
+   {
+
+        $error = "<p class='red'>Please email is required</p>";
+
+   }
+   else if(empty($_POST['password'])) 
+   {
+
+        $error = "<p class='red'>Please password is required</p>";
+
+   }
+
+   else
+   {   
+      if(file_exists("login_data.json"))
+      {
+
+           $current_data = file_get_contents("login_data.json");
+           $array_data = json_decode ($current_data, true);
+           $extra = array(
+       
+                  "email" => $_POST['email'],
+                  "password" => $_POST['password']
+
+            );
+            $array_data[] = $extra;
+            $final_data = json_encode($array_data);
+            if(file_put_contents('login_data.json', $final_data)) 
+            {
+              
+              header ("Location:login_success.php");
+            }
+
+      }
+      else 
+      {
+
+        $error = "JSON File not found";
+      }
+
+   }
+}
 ?>
