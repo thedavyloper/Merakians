@@ -16,7 +16,7 @@ Sumit pull request
 
 Contibutors/Programmers
 David Akpan
-Tosin Ademiluyi
+Oluwatosin Ademiluyi
 Joel O
 Mary Joseph
 Olaniyi Ogunbe
