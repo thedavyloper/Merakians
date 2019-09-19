@@ -101,7 +101,33 @@
 			</div>
 
 		</div>
+<!--Mobile form-->
+<div class="form-container-mobile">
+	<img class="logo" src="https://res.cloudinary.com/aidee/image/upload/v1568650275/Merakians/Grp_logo_qkrk0u.png" alt="team logo">
+	<form action="#" method="post">
+			<h1>Welcome Back</h1>
+			<div class="social-icons">
+				<a href="#" class="social"><i class="socicon-facebook"></i></a>
+				<a href="#" class="social"><i class="socicon-twitter"></i></a>
+				<a href="#" class="social"><i class="socicon-google"></i></a>
+			</div>
+			<p>Or login with your email</p>
+			<input type="email" name="email" placeholder="Email" />
+			<input type="password" name="password" placeholder="Password" /><br>
+			<a class="help" href="#">Forgot password?</a><br>
+			<?php
+				if (isset($error))
+				{
+					echo $error;
+				}
+				?>
+			<button type="submit" id="loginbtn" name="login">LOGIN</button>
+			<p> Don't have an account? <a class="link" href="mobile_signup_form.php">Signup</a></p>
+			
+	</form>
+</div>
 
+<!--mobiel form ends-->
 	</div>
 
 </body>
