@@ -349,3 +349,81 @@ img{
 #success {
     color: green;
 }
+
+.form-container-mobile {
+    display: none;
+}
+
+
+/*Responsiveness*/
+
+@media (max-width: 768px) {
+    body{
+        margin: 1px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: #60c0f9;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .main-container{
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: #60c0f9;
+        overflow: hidden;
+    }
+    
+
+    a {
+        color: red;
+        font-size: 14px;
+        text-decoration: none;
+        margin: 15px 0;
+        overflow-y: hidden;
+    }
+
+    .form-container {
+        display: none;
+    }
+
+    .form-container-mobile {
+        display: block;
+        width: 90%;
+        height: 50em;
+        margin: 0 auto;
+        padding: 1em;
+        text-align: center;
+        border-radius: 0.5em;
+        background-color: #60c0f9;
+        overflow: hidden;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    button {
+    border-radius: 20px;
+    border: 1px solid #00045b;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    background-color: #00045b;
+    cursor: pointer;
+    margin-top: 2em;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+}
