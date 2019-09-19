@@ -23,10 +23,11 @@ Contibutors/Programmers:
 3. Afekehinde Gbadamosi https://github.com/daaef
 
 Frontend Devs:
-4 Idaresit Ubachukwu (Team Lead) https://github.com/AideeX
-1. Awe Paul https://github.com/paulsq
+1. Idaresit Ubachukwu (Team Lead) https://github.com/AideeX
 2. Joel O (Lead Frontend) https://github.com/ogunzjoel
-3. Olaniyi Ogunbe https://github.com/olaniyi-ogunbe
+3. Awe Paul https://github.com/paulsq
+4. Olaniyi Ogunbe https://github.com/olaniyi-ogunbe
+
 
 Backend devs:
 1. David Akpan (Lead Backend) https://github.com/thedavyloper
