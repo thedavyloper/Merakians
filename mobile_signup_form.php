@@ -47,7 +47,7 @@
 				}
 				?>
 			<button type="submit" name="Signup">SIGNUP</button>
-			<p> Have an account already? <a class="link" href="index.php">Login</a></p>
+			<p id="indexlink"> Have an account already? <a class="link" href="index.php">Login</a></p>
 			
 	</form>
 </div>
