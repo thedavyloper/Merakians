@@ -364,7 +364,6 @@ img{
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         background-color: #60c0f9;
-        overflow: hidden;
         height: auto;
     }
 
@@ -373,7 +372,7 @@ img{
         width: 100%;
         height: auto;
         background-color: #60c0f9;
-        overflow: hidden;
+        margin-top: 0;
     }
     
 
@@ -382,7 +381,7 @@ img{
         font-size: 14px;
         text-decoration: none;
         margin: 15px 0;
-        overflow-y: hidden;
+        
     }
 
     .form-container {
@@ -392,13 +391,13 @@ img{
     .form-container-mobile {
         display: block;
         width: 90%;
-        height: 50em;
-        margin: 0 auto;
+        height: auto;
+        margin: auto;
         padding: 1em;
         text-align: center;
         border-radius: 0.5em;
         background-color: #60c0f9;
-        overflow: hidden;
+        
     }
 
     p {
