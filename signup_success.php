@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -15,9 +16,14 @@
 
 <body>
 			<?php
-				$message = "<p id='success'>Login Successful, Welcome!</p>";
-				echo $message ."<p><a href='index.php'>Logout</a></p>";
-				
+			session_start();
+					 $name = $_SESSION["name"];
+					$username = $_SESSION["name"];
+					$password = $_SESSION["name"];
+					echo "<p id='success'>Sign up is successful</p>";
+					echo "<p>";
+					echo "return to <a href='index.php'>Login</a>";
+					echo "</p>";
 			?>
 		</div>
       <script src="js/script.js"></script>
