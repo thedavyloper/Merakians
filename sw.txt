@@ -1,0 +1,29 @@
+APPENDING FORM DATA TO JSON FILE USIN PHP
+
+1. A json file named login_data which will act like a database was created to store the submitted user data.
+2. An html form with post method which will append the form into login_data json file
+3. A php tag housing scripts for namely;
+     declaration of variables message and error
+     User is checked if submit button is clicked using submit parameter
+    Validating if all text boxes are filled or not using conditional statements if and else
+    error massage is generated if empty.
+  Availablity of json file login_data was done with the use of conditional statement if and else 
+error message is generated if available or not.
+  A variable current_data to store json file data was declared 
+using the file_get_content function to get the data
+current_data is then being converted in array format using json_decode function and stored into array_data variable.
+variable extra was created to store array having 2 keys namely;email and password 
+The keys are then used to define email and password textbox value respectively.
+The extra stores the form data.
+array_data is created for the array to be appended into, 
+array_data is converted in json format using json_decode function storing the result into final_data variable.
+final_data is then put into json file using file_put_content function with a if conditional statement containing variable message Data successfully submitted and error variable  JSON File not found 
+
+The isset function is then used to display error (any required textbox value) and message value (data successfully submitted if all textbox values are filled) at the begining and end of the form respectively.
+
+
+
+
+
+
+      
