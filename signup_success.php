@@ -20,7 +20,7 @@
 					 $name = $_SESSION["name"];
 					$username = $_SESSION["name"];
 					$password = $_SESSION["name"];
-					echo "<p id='success'>Sign up is successful</p>";
+					echo "<p id='success'>Registration is successful</p>";
 					echo "<p>";
 					echo "return to <a href='index.php'>Login</a>";
 					echo "</p>";
